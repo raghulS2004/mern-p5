@@ -1,0 +1,362 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+    display: flex;
+    overflow-x: hidden;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.navbar {
+    display: flex;
+    flex-direction: column;
+    width: 15vw;
+    background-color: #333;
+    position: fixed;
+    left: 0;
+    top: 0;
+    padding-top: 20px;
+    min-height: 100vh;
+    justify-content: center;
+}
+
+.navbar a {
+    color: white;
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+}
+
+.navbar a:hover {
+    background-color: #575757;
+}
+.logo{
+    width: 15vw;
+    height: 15vh;
+}
+.content {
+    margin-left: 230px;
+    flex: 1;
+}
+.img-content{
+    position: relative;
+}
+.overlay{
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.img-content img{
+    width: 85vw;
+    height: 80vh;
+    filter: brightness(70%);
+}
+.overlay h1{
+    font-size: 3rem;
+    margin: 29px;
+}
+.overlay button{
+    background-color: rgb(176 176 176);
+    margin-top: 20px;
+    border: none;
+    font-size: 1.2rem;
+    color: white;
+    border-radius: 10px;
+    padding: 5px;
+}
+.overlay button:hover{
+    background-color: rgb(0, 0, 0);
+
+}
+.main-header{
+    padding: 20px 50px;
+    text-align: center;
+}
+section{
+    padding: 20px 50px;
+}
+.main-header h1{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color:rgb(0, 0, 0);
+    margin: 20px;
+}
+.main-header p{
+    color: #575757;
+    margin: 25px 0;
+}
+
+
+.second-sec h1{
+    background-color: rgb(51 51 51);
+    position: absolute;
+    color: aliceblue;
+    padding: 10px;
+}
+.contents{
+    margin: 40px 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.content-box{
+    width: 30%;
+    padding: 25px;
+    margin: 20px 10px;
+    border: 4px solid #333333;;
+    text-align: center;
+    border-radius: 10px;
+}
+.content-box p{
+    color: #575757;
+    font-size: 0.9rem;
+}
+.content-box h3{
+    font-size: 1.2rem;
+}
+
+.third-sec h1{
+    background-color:rgb(51 51 51);
+    color: white;
+    position: absolute;
+    padding: 10px;
+}
+
+.skills{
+    display: flex;
+    margin: 10vh 0;
+}
+
+
+
+.skill-box p{
+    color: grey;
+}
+.bar{
+    background-color: rgb(193, 188, 188);
+    border-radius: 3px;
+    width: 30vw;
+}
+
+
+.pro-img{
+    width: 100%;
+}
+
+
+
+.contact-sec h1 {
+    background-color: rgb(51 51 51);
+    color: white;
+    position: absolute;
+    padding: 10px;
+}
+
+.contact-container {
+    margin-top: 10vh;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.contact-form {
+    flex: 1;
+    min-width: 300px;
+}
+
+.contact-form .form-group {
+    margin-bottom: 15px;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+    font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.contact-form textarea {
+    height: 100px;
+    resize: none;
+}
+
+.contact-form button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: rgb(51 51 51) ; 
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: rgb(111, 107, 107);
+}
+.footer-section {
+    background-color: #333; 
+    padding: 20px 0;
+    text-align: center;
+    color: #fff; 
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.social-icons {
+    margin-bottom: 10px;
+}
+
+.social-icons a {
+    color: #fff; 
+    font-size: 1.5rem;
+    margin: 0 10px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #ff69b4; 
+}
+
+.footer-section p {
+    font-size: 1rem;
+    margin: 0;
+}
+
+.poster-gallery {
+    margin: 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.poster-item {
+    margin: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    border: 2px solid #ddd;
+    width: 100%;
+    height: 350px; /* Fixed height for uniformity */
+}
+
+.poster-item img {
+    padding: 30px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image fills the container, cropping where necessary */
+    display: block;
+    border-radius: 8px;
+}
+
+.pos h1 {
+    background-color: rgb(51 51 51);
+    color: white;
+    position: absolute;
+    padding: 10px;
+}
+
+
+
+@media (max-width: 768px) {
+    .navbar {
+        width: 25vw; /* Slightly increase width for smaller screens */
+        position: fixed; /* Fix the navbar on the left side */
+        top: 0;
+        left: 0;
+        height: 100%; /* Full viewport height */
+        z-index: 1000; /* Ensure it stays above other content */
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        padding-top: 20px; 
+        background-color: #333; /* Keep the background color solid */
+    }
+
+    .logo {
+        width: 100%; /* Make the logo responsive */
+        height: auto;
+    }
+
+    .navbar a {
+        padding: 15px 20px;
+        font-size: 1.1rem; /* Adjust font size for readability */
+        text-align: left; /* Align links to the left inside the navbar */
+    }
+
+    .content {
+        margin-left: 25vw; /* Push the main content to the right to prevent overlap */
+        padding: 20px; /* Add some padding for better readability */
+    }
+
+    .img-content img {
+        width: 100%; /* Ensure images are responsive */
+        height: auto;
+    }
+
+
+    .overlay h1 {
+        font-size: 2rem;
+    }
+
+    .overlay button {
+        font-size: 1rem;
+    }
+
+    .main-header,
+    section {
+        padding: 20px;
+    }
+
+    .contents {
+        flex-direction: column;
+    }
+
+    .content-box {
+        width: 90%;
+    }
+
+    .skills {
+        flex-direction: column;
+    }
+
+    .skill-box {
+        width: 100%;
+    }
+    .bar{
+        width: 100%;
+    }
+
+  
+
+    .contact-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-form {
+        width: 100%;
+    }
+
+    .poster-gallery {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+}
